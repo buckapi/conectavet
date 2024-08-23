@@ -35,7 +35,15 @@
         </li>
         <li class="action-add-task" [hidden]="global.activateRoute!='home'">
             <a href="#createProject" data-bs-toggle="offcanvas"
-                aria-controls="offcanvasBottom"><i class="icon-search"></i></a></li>
+                aria-controls="offcanvasBottom">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path style="stroke: none !important;"  d="M10 18H14V16H10V18ZM3 6V8H21V6H3ZM6 13H18V11H6V13Z" fill="#FFFFFF" stroke="none"/>
+                </svg>
+                
+                
+                
+            
+            </a></li>
         <li (click)="global.setRoute('chat')" *ngIf="auth.isLogin()"><a (click)="global.setRoute('chat')">
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path

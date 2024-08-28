@@ -11,16 +11,27 @@ body {
     right: 16px;
     z-index: 1000;
   }
+
   .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)); */
-    background: linear-gradient(to bottom, rgba(255, 165, 0, 1),  #ffc107c2);
-
-
-
-    z-index: 999; /* Colocar este fondo por encima de todo, menos los botones */
+    background: linear-gradient(to bottom, rgba(255, 165, 0, 1), #ffc107c2);
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mueve el texto hacia arriba */
+    padding-top: 20%; /* Ajusta esta propiedad según sea necesario para subir o bajar el texto */
+    color: white;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
   }
+  
+  .overlay-content {
+    font-size: 47px;
+    text-align: center;
+    font-weight: bold; /* Hace que las letras sean más gruesas */
+    line-height: 1.2; /* Ajusta el interlineado */
+  }
+  

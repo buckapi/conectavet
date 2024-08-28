@@ -346,7 +346,8 @@ input::-moz-focus-inner {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: 'Nunito', sans-serif;
   font-size: 13px;
   line-height: 22px;
   font-weight: 400;

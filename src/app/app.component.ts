@@ -15,6 +15,9 @@ import { BookingComponent } from './components/booking/booking.component';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { LoginComponent } from './components/login/login.component';
 import { PocketAuthService } from './services/auth-pocketbase.service';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,6 +25,8 @@ import { PocketAuthService } from './services/auth-pocketbase.service';
     RouterOutlet,
     CommonModule,
     ChatComponent,
+    MatButtonModule,
+    MatIconModule,
     HomeComponent,
     ProfileComponent,
     FooterComponent,

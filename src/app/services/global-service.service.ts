@@ -5,6 +5,9 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class GlobalService {
   private _activateRoute = 'home';
+  showIcons = false;
+  specialists: any[] = [];
+  showOverlay = false;
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   get activateRoute(): string {
@@ -13,7 +16,10 @@ export class GlobalService {
     }
     return this._activateRoute;
   }
-
+  toggleOverlay() {
+    this.showOverlay = !this.showOverlay;
+    this.showIcons = this.showOverlay; // Mostrar las opciones solo si el overlay está activo
+  }
   setRoute(route: string) {
     if (isPlatformBrowser(this.platformId)) {
       const isLoggedin = localStorage.getItem('isLoggedin') === 'true';

@@ -1,11 +1,11 @@
+<div class="overlay" *ngIf="global.showOverlay"></div>
 <app-header [hidden]="global.activateRoute=='profile' "></app-header>
 <app-home [hidden]="global.activateRoute!='home'"></app-home>
 <app-chat [hidden]="global.activateRoute!='chat'"></app-chat>
 <app-login [hidden]="global.activateRoute!='login'"></app-login>
 <app-booking [hidden]="global.activateRoute!='booking'"></app-booking>
 <app-profile [hidden]="global.activateRoute!='profile'"></app-profile>
-<app-footer></app-footer>
-
+<app-footer [hidden]="global.showOverlay"></app-footer>
 <!-- create project -->
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="createProject" aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-header style-1">

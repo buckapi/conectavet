@@ -1,3 +1,22 @@
+
+body {
+    font-family: 'Nunito', sans-serif;
+  }
 .swiper-slide{
     width: 30% !important
 }
+.floating-button {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+    z-index: 999; /* Colocar este fondo por encima de todo, menos los botones */
+  }

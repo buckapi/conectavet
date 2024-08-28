@@ -13,3 +13,155 @@
     font-size: 2em;
   }
   
+  .floating-button-container {
+    position: fixed;
+    bottom: 86px;
+    right: 36px;
+    z-index: 1000;
+  }
+  
+  .floating-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+/* Fondo negro semi-transparente */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+  z-index: 999; /* Colocar este fondo por encima de todo, menos los botones */
+}
+
+/* Contenedor del botón flotante */
+.floating-button-container {
+  position: fixed;
+  bottom: 86px;
+  right: 36px;
+  z-index: 1000; /* Asegurar que esté por encima del overlay */
+}
+
+/* Estilo para el botón de pánico */
+.panic-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff0000; /* Color de fondo del botón de pánico */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para las opciones (icon buttons) */
+.icon-button {
+  position: absolute;
+  font-family: 'Nunito', sans-serif !important;
+  padding: 4px 12px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1;
+  z-index: 1001; /* Colocar por encima del overlay */
+}
+
+.icon-button:hover {
+  background-color: #ffe6e6;
+}
+
+/* Posicionamiento de los botones de opción */
+.icon-1 {
+  bottom: 70px;
+  right: 10px;
+}
+
+.icon-3 {
+  bottom: 10px;
+  right: 85px;
+}
+
+
+
+  
+  .show-icons .icon-button {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .panic-button {
+    display: inline-block;
+    outline: none;
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 1.5em; /* Disminuir el tamaño de la fuente */
+    color: hsla(350, 0%, 100%, 1);
+    cursor: pointer;
+    background-color: hsla(350, 80%, 10%, 1);
+    background-image:
+        linear-gradient(273deg, hsla(350, 80%, 60%, 1) 30%, hsla(350, 80%, 50%, 1) 40%);
+    border: none;
+    border-radius: 50%;
+    width: 50px;  /* Ajustar el tamaño del botón */
+    height: 50px; /* Ajustar el tamaño del botón */
+    box-shadow:
+        inset 0px 0px 1px 2px hsla(350, 80%, 30%, 0.9),
+        inset 0px 0px 2px 5px hsla(350, 80%, 50%, 0.9),
+        inset 1px 1px 1px 7px hsla(350, 80%, 100%, 0.8),
+        inset 0px 0px 2px 10px hsla(350, 80%, 60%, 0.8),
+        inset 0px 0px 4px 14px hsla(350, 80%, 50%, 0.9),
+        8px 10px 2px 6px hsla(350, 80%, 20%, 0.55),
+        0px 0px 3px 3px hsla(350, 80%, 40%, 0.9),
+        0px 0px 2px 8px hsla(350, 80%, 50%, 0.9),
+        -1px -1px 1px 8px hsla(350, 80%, 100%, 0.9),
+        0px 0px 2px 13px hsla(350, 80%, 50%, 0.9),
+        0px 0px 1px 15px hsla(350, 80%, 40%, 0.9),
+        1px 3px 14px 16px hsla(350, 80%, 0%, 0.4);
+    text-align: center;
+    line-height: 50px; /* Ajustar la alineación del texto */
+    transition: transform 0.1s ease-in-out;
+}
+
+.panic-button:active {
+    transform: scale(0.95);
+    background-image:
+        linear-gradient(273deg, hsla(350, 80%, 50%, 1) 50%, hsla(350, 80%, 55%, 1) 60%);
+    box-shadow:
+        inset 3px 4px 3px 2px hsla(350, 80%, 20%, 0.55),
+        inset 0px 0px 1px 1px hsla(350, 80%, 30%, 0.9),
+        inset -1px -1px 2px 3px hsla(350, 80%, 50%, 0.9),
+        inset -2px -2px 1px 3px hsla(350, 80%, 100%, 0.8),
+        inset 0px 0px 2px 7px hsla(350, 80%, 60%, 0.8),
+        inset 0px 0px 3px 10px hsla(350, 80%, 50%, 0.9),
+        0px 0px 3px 2px hsla(350, 80%, 40%, 0.9),
+        0px 0px 2px 6px hsla(350, 80%, 50%, 0.9),
+        -1px -1px 1px 6px hsla(350, 80%, 100%, 0.9),
+        0px 0px 2px 11px hsla(350, 80%, 50%, 0.9),
+        0px 0px 1px 12px hsla(350, 80%, 40%, 0.9),
+        1px 3px 14px 14px hsla(350, 80%, 0%, 0.4);
+}

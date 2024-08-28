@@ -1,5 +1,5 @@
 <div class="overlay" *ngIf="global.showOverlay"></div>
-<app-header [hidden]="global.activateRoute=='profile' "></app-header>
+<app-header [hidden]="global.activateRoute=='profile' || global.showOverlay "></app-header>
 <app-home [hidden]="global.activateRoute!='home'"></app-home>
 <app-chat [hidden]="global.activateRoute!='chat'"></app-chat>
 <app-login [hidden]="global.activateRoute!='login'"></app-login>

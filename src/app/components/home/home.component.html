@@ -121,9 +121,18 @@
                     <!-- Eliminado el ícono de admiración -->
                 </button>
               
-                <span class="icon-button icon-1" *ngIf="global.showIcons">+ Urgencia a domicilio</span>
+                <span class="icon-button icon-1" *ngIf="global.showIcons">
+                    <span class="text-danger" style="padding-right: 5px;">
+
+                        +  
+                    </span>
+                     Urgencia a domicilio</span>
                 <!-- Botón eliminado o reubicado según sea necesario -->
-                <span class="icon-button icon-3" *ngIf="global.showIcons">Localizar mascota</span>
+                <span class="icon-button icon-3" *ngIf="global.showIcons">
+                    <span class="text-danger" style="padding-right: 5px;">
+
+                        !  
+                    </span> Mascota extraviada</span>
             </div>
         </div>
     </div>

@@ -57,12 +57,12 @@ body {
   color: white; /* Color del texto */
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 18px;
   font-family: Arial, sans-serif;
   white-space: nowrap;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-  top: -10px; /* Ajusta la posición vertical */
-  right: 50px; /* Mueve el label hacia la izquierda */
+  top: 25px; /* Ajusta la posición vertical */
+  right: 65px; /* Mueve el label hacia la izquierda */
   z-index: 1000;
   opacity: 1; /* El label siempre será visible */
   pointer-events: none;

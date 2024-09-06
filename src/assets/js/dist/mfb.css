@@ -79,7 +79,7 @@
  */
 .mfb-component--tl, .mfb-component--tr, .mfb-component--bl, .mfb-component--br {
   box-sizing: border-box;
-  margin: 25px 25px 60px 25px;
+  margin: 25px 25px 70px 25px;
   position: fixed;
   white-space: nowrap;
   z-index: 30;

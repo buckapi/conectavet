@@ -40,12 +40,16 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  menuState: string = 'close'; // Valor inicial del menú
   constructor( @Inject(PLATFORM_ID) private platformId: Object,
   private scriptLoader: ScriptLoaderService,
   public auth:PocketAuthService,
   // public pocketbase: PocketbaseService,
   public global: GlobalService) {}
 
+  toggleMenu() {
+    this.menuState = this.menuState === 'open' ? 'close' : 'open';
+  }
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       this.scriptLoader

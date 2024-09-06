@@ -1062,16 +1062,11 @@
   </div>
 </div>
 
-
-<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+<ul id="menu" [attr.data-mfb-state]="menuState" class="mfb-component--br mfb-zoomin">
   <li class="mfb-component__wrap">
-    <a href="#" class="mfb-component__button--main">
-      <i class="mfb-component__main-icon--resting ion-plus-round"></i>
-
+    <a href="#" class="mfb-component__button--main" (click)="toggleMenu()">
       <img src="assets/images/banner_title_img02.png" alt="Custom Icon" class="mfb-component__main-icon--resting" style="box-shadow: 0px 10px 20px 0px rgba(255, 36, 23, 0.5); border-radius: 50%;"/>
       <i class="mfb-component__main-icon--active ion-close-round"></i>
-
-
     </a>
     <ul class="mfb-component__list">
       <li>

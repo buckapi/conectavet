@@ -209,7 +209,7 @@
         1px 3px 14px 14px hsla(350, 80%, 0%, 0.4);
 }
 .swiper-slide {
-  margin-right: 0; /* Asegúrate de que no haya margen entre los slides */
+  margin-right: 10px; /* Asegúrate de que no haya margen entre los slides */
 }
 .swiper{
   height: 100% !important;
